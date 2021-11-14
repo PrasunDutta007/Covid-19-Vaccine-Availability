@@ -158,9 +158,7 @@ def search_vaccine_avl():
             else:
                 age_grp = '18-44'
 
-            # data_msg = "{0:<12}{1:<40}{2:<10}{3:<10}{4:<5}{5:<5}\n".format(curr_status,center_name,age_grp,vaccine_name,qnty_dose_1,qnty_dose_2)
-            # result_box.insert(END, " {0:<10s} {1:<30.28s}    {2:<10s} {3:<14s}  {4:<5} {5:<5} {6:^8}\n".format(curr_status,center_name,str(age_grp),vaccine_name,str(qnty_dose_1),str(qnty_dose_2), available_capacity))
-            # result_box.insert(END, str.rjust(age_grp, 8))
+            
             result_box_avl.insert(END, f"{curr_status:^6s}")
             result_box_avl.insert(END, "\n")
             result_box_cent.insert(END, f"{center_name:<30s}")
